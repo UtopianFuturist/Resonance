@@ -253,22 +253,6 @@ body::before {
         inset 0 1px 0 rgba(0, 0, 0, 0.1); /* Adjusted inset shadow for hover */
 }
 
-/* SoundCloud Embed Container */
-.soundcloud-embed-container {
-    margin-top: 30px;      /* Increased top margin slightly */
-    margin-bottom: 30px;   /* Increased bottom margin slightly */
-    padding: 0 20px;       /* Add some horizontal padding to prevent sticking to edges on smaller screens */
-    max-width: 800px;      /* Set a max-width for very wide screens */
-    margin-left: auto;     /* Center the container */
-    margin-right: auto;    /* Center the container */
-}
-
-/* Optional: Style the iframe itself if needed, though width 100% usually works well */
-.soundcloud-embed-container iframe {
-    border-radius: 8px; /* Add a slight border-radius to match other elements if desired */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
