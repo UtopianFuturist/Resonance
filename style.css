@@ -22,9 +22,9 @@ body::before {
     width: 100%;
     height: 100%;
     background: 
-        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(0, 168, 107, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(0, 168, 107, 0.15) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
 }
@@ -40,15 +40,15 @@ body::before {
 
 /* Header Styles */
 .header {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 
         0 8px 32px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,8 +67,8 @@ body::before {
     font-weight: 300;
     color: #ffffff;
     text-shadow: 
-        0 0 20px rgba(255, 255, 255, 0.5),
-        0 2px 4px rgba(0, 0, 0, 0.3);
+        0 0 20px rgba(255, 255, 255, 0.6),
+        0 2px 4px rgba(0, 0, 0, 0.4);
     letter-spacing: 2px;
 }
 
@@ -79,14 +79,14 @@ body::before {
     transform: translate(-50%, -50%);
     width: 120%;
     height: 120%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
     border-radius: 50%;
     animation: pulse 3s ease-in-out infinite;
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
-    50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
+    0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.9; transform: translate(-50%, -50%) scale(1.1); }
 }
 
 /* Navigation Styles */
@@ -101,8 +101,8 @@ body::before {
 }
 
 .nav-button {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 15px;
     padding: 12px 20px;
     color: #ffffff;
@@ -112,32 +112,32 @@ body::before {
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     box-shadow: 
-        0 4px 15px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        0 4px 15px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .nav-button:hover {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3));
     transform: translateY(-2px);
     box-shadow: 
-        0 6px 20px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        0 6px 20px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .dropdown-content {
     position: absolute;
     top: 100%;
     left: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 15px;
     min-width: 250px;
     box-shadow: 
-        0 10px 40px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        0 10px 40px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -165,7 +165,7 @@ body::before {
 }
 
 .dropdown-content a:hover {
-    background: linear-gradient(145deg, rgba(0, 119, 190, 0.1), rgba(0, 168, 107, 0.1));
+    background: linear-gradient(145deg, rgba(0, 119, 190, 0.15), rgba(0, 168, 107, 0.15));
     color: #0077be;
     transform: translateX(5px);
 }
@@ -178,14 +178,14 @@ body::before {
 }
 
 .browser-container {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 
-        0 10px 40px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        0 10px 40px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -193,12 +193,12 @@ body::before {
 }
 
 .browser-header {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25);
     padding: 15px 20px;
     display: flex;
     align-items: center;
     gap: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .browser-controls {
@@ -211,7 +211,7 @@ body::before {
     height: 35px;
     border: none;
     border-radius: 50%;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
     color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -219,13 +219,13 @@ body::before {
     align-items: center;
     justify-content: center;
     font-size: 1.1rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .control-btn:hover {
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
     transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .url-bar {
@@ -238,21 +238,21 @@ body::before {
 #urlInput {
     flex: 1;
     padding: 12px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 25px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     font-size: 0.9rem;
     outline: none;
     transition: all 0.3s ease;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 #urlInput:focus {
-    border-color: rgba(0, 119, 190, 0.5);
+    border-color: rgba(0, 119, 190, 0.6);
     box-shadow: 
-        inset 0 2px 5px rgba(0, 0, 0, 0.1),
-        0 0 0 3px rgba(0, 119, 190, 0.2);
+        inset 0 2px 5px rgba(0, 0, 0, 0.15),
+        0 0 0 4px rgba(0, 119, 190, 0.3);
 }
 
 .go-btn {
@@ -264,7 +264,7 @@ body::before {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 119, 190, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 119, 190, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -272,7 +272,7 @@ body::before {
 .go-btn:hover {
     background: linear-gradient(145deg, #005a9e, #0077be);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 119, 190, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 119, 190, 0.5);
 }
 
 .iframe-container {
@@ -294,7 +294,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -313,7 +313,7 @@ body::before {
 .loading-spinner {
     width: 50px;
     height: 50px;
-    border: 4px solid rgba(0, 119, 190, 0.2);
+    border: 4px solid rgba(0, 119, 190, 0.3);
     border-top: 4px solid #0077be;
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -333,20 +333,20 @@ body::before {
 
 /* Footer */
 .footer {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
     box-shadow: 
         0 8px 32px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .footer p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 0.9rem;
     font-weight: 300;
 }

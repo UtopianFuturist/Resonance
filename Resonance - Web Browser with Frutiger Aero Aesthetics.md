@@ -6,7 +6,7 @@ A beautiful web browser interface featuring Frutiger Aero design aesthetics with
 
 - **Frutiger Aero Design**: Glossy, translucent interface with vibrant blue and green gradients
 - **Categorized Navigation**: Dropdown menus organized by LLMs, Tools, Social, Games, Videos, Quotes, and Search
-- **Iframe Browser**: Embedded web browsing experience with navigation controls
+- **External Browser Links**: Due to modern browser security policies (X-Frame-Options, CSP), most external websites cannot be embedded directly within an iframe. Therefore, clicking on any link or entering a URL in the input bar will now open the respective website in a **new browser tab**.
 - **Responsive Design**: Works on both desktop and mobile devices
 - **Smooth Animations**: Hover effects, transitions, and interactive feedback
 
@@ -107,18 +107,18 @@ To run locally:
 
 ## Notes
 
-- Some websites may not load in the iframe due to X-Frame-Options security policies
-- The browser includes navigation controls (back, forward, refresh)
-- Keyboard shortcuts are supported (Ctrl+R for refresh, Alt+Arrow keys for navigation)
-- The design is optimized for modern browsers with CSS backdrop-filter support
+- Due to modern browser security policies (X-Frame-Options, CSP), most external websites cannot be embedded directly within an iframe. Therefore, clicking on any link or entering a URL in the input bar will now open the respective website in a **new browser tab**.
+- The browser controls (back, forward, refresh) will primarily affect the URL bar history and the parent page, not the iframe content directly.
+- Keyboard shortcuts are supported (Ctrl+R for refresh, Alt+Arrow keys for navigation).
+- The design is optimized for modern browsers with CSS backdrop-filter support.
 
 ## Customization
 
 To modify the color scheme or add new categories:
 
-1. **Colors**: Edit the CSS variables in `style.css`
-2. **Links**: Add new links in the HTML dropdown sections
-3. **Categories**: Add new dropdown sections in `index.html` and corresponding JavaScript handlers
+1. **Colors**: Edit the CSS variables in `style.css`.
+2. **Links**: Add new links in the HTML dropdown sections.
+3. **Categories**: Add new dropdown sections in `index.html` and corresponding JavaScript handlers.
 
 ## License
 
