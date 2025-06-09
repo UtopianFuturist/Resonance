@@ -14,67 +14,13 @@
                 <div class="logo-glow"></div>
             </div>
             <nav class="navigation">
-                <div class="nav-item dropdown">
-                    <button class="nav-button" data-category="llms">LLMs</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-url="https://chatgpt.com/">ChatGPT</a>
-                        <a href="#" data-url="https://gemini.google.com/app">Gemini</a>
-                        <a href="#" data-url="https://claude.ai/login?returnTo=%2F%3F">Claude</a>
-                        <a href="#" data-url="https://shapes.inc/">Shapes Inc</a>
-                        <a href="#" data-url="https://poe.com/login">Poe</a>
-                        <a href="#" data-url="https://huggingface.co/chat/">HuggingChat</a>
-                    </div>
-                </div>
-                
-                <div class="nav-item dropdown">
-                    <button class="nav-button" data-category="tools">Tools</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-url="https://huggingface.co/spaces">HuggingFace Spaces</a>
-                        <a href="#" data-url="https://www.riffusion.com/">Riffusion</a>
-                        <a href="#" data-url="https://www.bing.com/images/create?#">Bing Image Creator</a>
-                        <a href="#" data-url="https://github.com/UtopianFuturist/dearest-llama">Dearest Llama / Free BlueSky Bots</a>
-                    </div>
-                </div>
-                
-                <div class="nav-item dropdown">
-                    <button class="nav-button" data-category="social">Social</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-url="https://bsky.app/">BlueSky</a>
-                        <a href="#" data-url="https://www.reddit.com/r/singularity/?rdt=63578">r/Singularity</a>
-                        <a href="#" data-url="https://discord.gg/ujcRTJrmm4">Alexandria AI Personas Discord</a>
-                    </div>
-                </div>
-                
-                <div class="nav-item dropdown">
-                    <button class="nav-button" data-category="games">Games</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-url="https://www.buttonbass.com/DubstepCubeOriginal.html">ButtonBass Dubstep Cube</a>
-                        <a href="#" data-url="https://experience.odyssey.world/">Odyssey</a>
-                        <a href="#" data-url="https://websim.com/">WebSim</a>
-                    </div>
-                </div>
-                
-                <div class="nav-item dropdown">
-                    <button class="nav-button" data-category="videos">Videos</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-url="https://m.youtube.com/@NeuralViz/featured">Neural Viz</a>
-                        <a href="#" data-url="https://m.youtube.com/@OfficialWKUK">WKUK</a>
-                    </div>
-                </div>
-                
-                <div class="nav-item dropdown">
-                    <button class="nav-button" data-category="quotes">Quotes</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-url="https://en.m.wikiquote.org/wiki/Carl_Sagan">Carl Sagan Quotes</a>
-                    </div>
-                </div>
-                
-                <div class="nav-item dropdown">
-                    <button class="nav-button" data-category="search">Search</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-url="https://duckduckgo.com/">DuckDuckGo</a>
-                    </div>
-                </div>
+                <a href="llms.html" class="nav-button">LLMs</a>
+                <a href="tools.html" class="nav-button">TOOLS</a>
+                <a href="social.html" class="nav-button">SOCIAL</a>
+                <a href="games.html" class="nav-button">GAMES</a>
+                <a href="videos.html" class="nav-button">VIDEOS</a>
+                <a href="quotes.html" class="nav-button">QUOTES</a>
+                <a href="search.html" class="nav-button">SEARCH</a>
             </nav>
         </header>
         
@@ -87,8 +33,8 @@
                         <button class="control-btn refresh-btn" id="refreshBtn">⟳</button>
                     </div>
                     <div class="url-bar">
-                        <input type="text" id="urlInput" placeholder="Enter URL or select from menu above">
-                        <button class="go-btn" id="goBtn">Go</button>
+                        <input type="text" id="urlInput" placeholder="Enter URL or select from menu above" value="https://duckduckgo.com/">
+                        <button class="go-btn" id="goBtn">GO</button>
                     </div>
                 </div>
                 <div class="iframe-container">
@@ -109,4 +55,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
 
