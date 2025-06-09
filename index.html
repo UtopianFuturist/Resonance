@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance - Web Browser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>Resonance</h1>
+                <div class="logo-glow"></div>
+            </div>
+            <nav class="navigation">
+                <div class="nav-item dropdown">
+                    <button class="nav-button" data-category="llms">LLMs</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-url="https://chatgpt.com/">ChatGPT</a>
+                        <a href="#" data-url="https://gemini.google.com/app">Gemini</a>
+                        <a href="#" data-url="https://claude.ai/login?returnTo=%2F%3F">Claude</a>
+                        <a href="#" data-url="https://shapes.inc/">Shapes Inc</a>
+                        <a href="#" data-url="https://poe.com/login">Poe</a>
+                        <a href="#" data-url="https://huggingface.co/chat/">HuggingChat</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <button class="nav-button" data-category="tools">Tools</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-url="https://huggingface.co/spaces">HuggingFace Spaces</a>
+                        <a href="#" data-url="https://www.riffusion.com/">Riffusion</a>
+                        <a href="#" data-url="https://www.bing.com/images/create?#">Bing Image Creator</a>
+                        <a href="#" data-url="https://github.com/UtopianFuturist/dearest-llama">Dearest Llama / Free BlueSky Bots</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <button class="nav-button" data-category="social">Social</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-url="https://bsky.app/">BlueSky</a>
+                        <a href="#" data-url="https://www.reddit.com/r/singularity/?rdt=63578">r/Singularity</a>
+                        <a href="#" data-url="https://discord.gg/ujcRTJrmm4">Alexandria AI Personas Discord</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <button class="nav-button" data-category="games">Games</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-url="https://www.buttonbass.com/DubstepCubeOriginal.html">ButtonBass Dubstep Cube</a>
+                        <a href="#" data-url="https://experience.odyssey.world/">Odyssey</a>
+                        <a href="#" data-url="https://websim.com/">WebSim</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <button class="nav-button" data-category="videos">Videos</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-url="https://m.youtube.com/@NeuralViz/featured">Neural Viz</a>
+                        <a href="#" data-url="https://m.youtube.com/@OfficialWKUK">WKUK</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <button class="nav-button" data-category="quotes">Quotes</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-url="https://en.m.wikiquote.org/wiki/Carl_Sagan">Carl Sagan Quotes</a>
+                    </div>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <button class="nav-button" data-category="search">Search</button>
+                    <div class="dropdown-content">
+                        <a href="#" data-url="https://duckduckgo.com/">DuckDuckGo</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="main-content">
+            <div class="browser-container">
+                <div class="browser-header">
+                    <div class="browser-controls">
+                        <button class="control-btn back-btn" id="backBtn">←</button>
+                        <button class="control-btn forward-btn" id="forwardBtn">→</button>
+                        <button class="control-btn refresh-btn" id="refreshBtn">⟳</button>
+                    </div>
+                    <div class="url-bar">
+                        <input type="text" id="urlInput" placeholder="Enter URL or select from menu above">
+                        <button class="go-btn" id="goBtn">Go</button>
+                    </div>
+                </div>
+                <div class="iframe-container">
+                    <iframe id="browserFrame" src="https://duckduckgo.com/" frameborder="0"></iframe>
+                    <div class="loading-overlay" id="loadingOverlay">
+                        <div class="loading-spinner"></div>
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Resonance - Explore the Web with Style</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
