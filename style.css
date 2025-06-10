@@ -318,3 +318,29 @@ body::before {
         font-size: 1.8rem;
     }
 }
+
+/* Fun Page Specific Styles */
+/* Ensure fun.html has <body class="fun-page"> */
+.fun-page .link-card {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); /* Example: Rosy gradient */
+    border-color: rgba(255, 154, 158, 0.5);
+}
+
+.fun-page .link-card h3 {
+    color: #333; /* Darker text for better contrast on lighter background */
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.fun-page .link-card p {
+    color: #555; /* Darker paragraph text */
+}
+
+.fun-page .link-card a {
+    background: linear-gradient(145deg, #ff758c, #ff7eb3); /* Vivid pink/red gradient for links */
+    box-shadow: 0 3px 10px rgba(255, 117, 140, 0.4);
+}
+
+.fun-page .link-card a:hover {
+    background: linear-gradient(145deg, #ff7eb3, #ff758c);
+    box-shadow: 0 5px 15px rgba(255, 126, 179, 0.5);
+}

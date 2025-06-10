@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music - Resonance</title>
+    <title>Fun - Resonance</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,9 +31,9 @@
 
         <main class="main-content">
             <div class="category-page">
-                <h2 class="category-title">Music</h2>
-                <div class="links-grid">
-                    <!-- Links will be added here later -->
+                <h2 class="category-title">Fun Websites</h2>
+                <div class="links-grid" id="fun-links">
+                    <!-- Links will be dynamically added here by script.js -->
                 </div>
                 <a href="index.html" class="back-button">← Back to Home</a>
             </div>
@@ -43,5 +43,10 @@
             <p>&copy; 2025 Resonance - Explore the Web with Style</p>
         </footer>
     </div>
+    <script src="script.js"></script>
+    <script>
+        // Specific script for fun.html to load fun links
+        loadLinks('fun');
+    </script>
 </body>
 </html>

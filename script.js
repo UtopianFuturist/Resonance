@@ -1,4 +1,96 @@
 // Resonance Browser JavaScript - Updated for Individual Pages
+
+// Data for site links
+const siteData = {
+    "llms": [
+        // ... (add LLM links here if managing dynamically)
+    ],
+    "tools": [
+        // ... (add Tool links here if managing dynamically)
+    ],
+    "social": [
+        // ... (add Social links here if managing dynamically)
+    ],
+    "games": [
+        // ... (add Game links here if managing dynamically)
+    ],
+    "articles": [
+        // ... (add Article links here if managing dynamically)
+    ],
+    "videos": [
+        // ... (add Video links here if managing dynamically)
+    ],
+    "quotes": [
+        // ... (add Quote links here if managing dynamically)
+    ],
+    "music": [
+        // ... (add Music links here if managing dynamically)
+    ],
+    "news": [
+        // ... (add News links here if managing dynamically)
+    ],
+    "fun": [
+        {
+            "title": "Neal Fun",
+            "description": "A collection of fun, interactive web experiences and games.",
+            "url": "https://neal.fun/"
+        },
+        {
+            "title": "Little Alchemy 2",
+            "description": "Combine elements to create new and surprising items.",
+            "url": "https://littlealchemy2.com/"
+        },
+        {
+            "title": "GeoGuessr",
+            "description": "Test your geography skills by guessing locations from Street View images.",
+            "url": "https://www.geoguessr.com/"
+        }
+    ]
+};
+
+// Function to load links into the current page
+function loadLinks(category) {
+    const linksGrid = document.querySelector('.links-grid');
+    if (!linksGrid) {
+        console.error("Error: '.links-grid' element not found on this page.");
+        return;
+    }
+
+    const links = siteData[category];
+    if (!links || links.length === 0) {
+        linksGrid.innerHTML = '<p>No links available for this category yet.</p>';
+        return;
+    }
+
+    linksGrid.innerHTML = ''; // Clear existing links (e.g., placeholders)
+    links.forEach(link => {
+        const linkCard = document.createElement('div');
+        linkCard.classList.add('link-card');
+
+        const title = document.createElement('h3');
+        title.textContent = link.title;
+
+        const description = document.createElement('p');
+        description.textContent = link.description;
+
+        const anchor = document.createElement('a');
+        anchor.href = link.url;
+        anchor.target = '_blank'; // Open in new tab
+        anchor.textContent = `Visit ${link.title}`;
+
+        linkCard.appendChild(title);
+        linkCard.appendChild(description);
+        linkCard.appendChild(anchor);
+        linksGrid.appendChild(linkCard);
+    });
+
+    // Re-apply ripple effect to newly added buttons
+    document.querySelectorAll(".link-card a").forEach(button => {
+        button.addEventListener("click", createRipple);
+    });
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // Add keyboard shortcuts
     document.addEventListener("keydown", function(e) {
