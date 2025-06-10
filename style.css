@@ -253,6 +253,25 @@ body::before {
         inset 0 1px 0 rgba(0, 0, 0, 0.1); /* Adjusted inset shadow for hover */
 }
 
+/* About Section on Homepage */
+.about-section {
+    text-align: center; /* From inline style */
+}
+
+.about-section .category-title { /* Targeting specifically the title within about-section */
+    margin-bottom: 20px; /* From inline style */
+}
+
+.about-section p {
+    color: #ffffff;       /* From inline style */
+    font-size: 1.1rem;    /* From inline style */
+    line-height: 1.6;     /* From inline style */
+    max-width: 900px;     /* Constrain line length for readability */
+    margin-left: auto;    /* Center the paragraph block if max-width is applied */
+    margin-right: auto;   /* Center the paragraph block if max-width is applied */
+    padding: 0 15px;      /* Add some padding so text doesn't touch edges of its container on smaller screens */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
